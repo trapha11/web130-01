@@ -1,0 +1,114 @@
+$black: #000
+$white: #FFF 
+$gray: #DDD
+$darkGray: #6e7177
+$lightBlue: #2DA9FF
+$darkBlue: #0A75BE
+    
+*
+    margin: 0 
+    padding: 0 
+
+body 
+    background-color: #E6E6E6
+    font-family: 'Avenir LT Std', sans-serif !important
+    
+header
+    text-align: center
+    
+h1
+    font-family: 'UnifrakturMaguntia', cursive !important
+
+h2  
+    font-family: 'Avenir LT Std', sans-serif !important
+
+h3  
+    font-family: 'Avenir LT Std', sans-serif !important
+
+h4  
+    font-family: 'Avenir LT Std', sans-serif !important
+    
+nav 
+    width: 100%
+    background: $black 
+    position: relative 
+    color: #ddd
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+    ul
+        list-style-type: none
+
+        li
+            line-height: 50px
+        
+            a
+                display: block 
+                text-decoration: none 
+                color: $gray
+                font-size: 1em  
+    
+        li:hover  
+            background: $darkGray
+        
+            a:hover
+                text-decoration: none 
+                color: $white
+        
+        li.active
+            background: $darkGray
+        
+#mobile-nav 
+    color: $white
+    line-height: 50px 
+    
+    @media (min-width: 764px) 
+        display: none  
+     
+    @media (max-width: 765px) 
+        background: url(../images/Hamburger.png) no-repeat left 5px center 
+        font-size: 120% 
+        cursor: pointer 
+        display: block 
+        width: 100% 
+        text-decoration: none 
+        text-align: center 
+        
+      
+#mobile-nav.minus   
+    background: url(../images/X-Icon.png) no-repeat left 5px center 
+    display: block 
+         
+#menu-dropdown
+    margin: 0 !important
+    @media (max-width: 640px) 
+        display: none 
+ 
+#menu-dropdown.open 
+    display: block 
+     
+#contents
+    margin: 0 25px
+
+#form
+    padding-top: 20px
+    @media (min-width: 641px)
+        margin-top: 50px
+        padding: 20px 0 !important
+        border: $gray 1px solid !important
+        border-radius: 4px
+    h4
+        text-align: center
+    
+.btn-default
+    background: $lightBlue !important
+    color: $white !important
+    width: 100% !important
+    text-shadow: none !important
+    margin-bottom: 20px !important
+    
+.glyphicon 
+    position: none !important
+
+
+    

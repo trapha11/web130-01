@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///Users/trangty/Documents/web202/fp/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wicked Wool|Home Page|WEB202</title>
+    <link rel="stylesheet" href="./Wicked Wool_Home Page_WEB202_files/styles.css" type="text/css">
+    <link href="./Wicked Wool_Home Page_WEB202_files/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!--Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="./Wicked Wool_Home Page_WEB202_files/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./Wicked Wool_Home Page_WEB202_files/bootstrap-theme.css" type="text/css">
+    <style>
+        @font-face {
+        font-family: 'fonts/Avenir LT Std';
+        src: url('fonts/AvenirLTStd-Black.eot');
+        src: url('fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+            url('fonts/AvenirLTStd-Black.woff') format('woff'),
+            url('fonts/AvenirLTStd-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo" class="row">
+        <a href="file:///Users/trangty/Documents/web202/fp/index.html"><img class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2" src="./Wicked Wool_Home Page_WEB202_files/logo.jpg" alt="logo"></a>
+        </div><!--end logo-->
+    </header>
+    
+   <nav class="container-fluid">
+        <a id="mobile-nav" href="file:///Users/trangty/Documents/web202/fp/index.html">
+            MENU
+        </a>    
+        <ul id="menu-dropdown" class="row">
+            <li class="active col-sm-2 col-xs-12">
+                <a href="file:///Users/trangty/Documents/web202/fp/index.html">HOME</a>
+            </li>
+            <li class="col-sm-2 col-xs-12">
+                <a href="file:///Users/trangty/Documents/web202/fp/about.html">ABOUT US</a>
+            </li>
+            <li id="dropdown" class="active col-sm-2 col-xs-12">
+                <a href="file:///Users/trangty/Documents/web202/fp/shop.html">SHOP  <span>▼</span></a>
+                <ul id="sub-nav" style="display: block;">
+                    <li>
+                        <a href="file:///Users/trangty/Documents/web202/fp/women.html">WOMEN</a>
+                    </li>
+                    <li>
+                        <a href="file:///Users/trangty/Documents/web202/fp/men.html">MEN</a>
+                    </li>
+                    <li>
+                        <a href="file:///Users/trangty/Documents/web202/fp/kids.html">KIDS BABIES</a>
+                    </li>
+                    <li>
+                        <a href="file:///Users/trangty/Documents/web202/fp/home.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="file:///Users/trangty/Documents/web202/fp/accessory.html">ACCESSORIES</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-sm-2 col-xs-12">
+                <a href="file:///Users/trangty/Documents/web202/fp/opinion.html">GET STARTED</a>
+            </li>
+            <li class="col-sm-2 ol-xs-12">
+                <a href="file:///Users/trangty/Documents/web202/fp/login.html">JOIN PARTY</a>
+            </li>
+            <li class="col-sm-2 col-xs-12">
+                <a href="file:///Users/trangty/Documents/web202/fp/login.html">CONTACT US</a>
+            </li>
+        </ul>
+    <script src="./Wicked Wool_Home Page_WEB202_files/jquery.min.js"></script>
+    <!--MY OWN JS-->    
+    <script>
+        $(document).ready(function(){
+            //when shop hovered
+            $("#dropdown a").click(function(e){
+                event.preventDefault();
+                $("#sub-nav").slideToggle('slow');
+            });
+            //when Mobile Menu bar clicked
+            $('#mobile-nav').click(function(e) {
+                event.preventDefault();
+                //images change
+                $(this).toggleClass("minus");
+                //menu dropped down
+                $("#menu-dropdown").toggleClass('open');
+            });
+        });
+    </script>
+    </nav>   
+    <!--end nav bar-->
+    <div id="wrapper" class="row">
+    <div id="poster" class="col-xs-12">
+        <h2>"Get Crafty, The Time is Now."</h2>
+        <a href="file:///Users/trangty/Documents/web202/fp/index.html#"><button>SHOP</button></a>
+        <img id="store-image" src="./Wicked Wool_Home Page_WEB202_files/store_image.jpg" alt="store image">
+    </div><!--end poster-->
+     	<div class="box1 col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
+            <div><img src="./Wicked Wool_Home Page_WEB202_files/image3.jpg"></div>   
+            <h3>SALE</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...<a href="file:///Users/trangty/Documents/web202/fp/index.html#"><button>SHOP</button></a></p> 
+    	</div><!--end box1-->
+    	<div class="box2 col-md-3 col-sm-4 col-xs-12">
+            <div><img src="./Wicked Wool_Home Page_WEB202_files/image4-min.jpg"></div> 
+             <h3>COLLECTIONS</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...<a href="file:///Users/trangty/Documents/web202/fp/index.html#"><button>SHOP</button></a></p> 
+    	</div> <!--end box2-->
+    	<div class="box3 col-md-3 col-sm-4 col-xs-12">
+            <div><img src="./Wicked Wool_Home Page_WEB202_files/image6-min.jpg"></div> 
+            <h3>NEW ARRIVALS</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...<a href="file:///Users/trangty/Documents/web202/fp/index.html#"><button>SHOP</button></a></p>
+    	</div><!--end box3--> 
+    </div><!--end wrapper-->
+
+    <div id="copyright">
+        <ul class="row">
+            <li class="col-sm-4 col-xs-12"><small>Copyright 2017,©</small></li>
+            <li class="col-sm-4 col-xs-12"><small>All Rights Reserved</small></li>    
+            <li class="col-sm-4 col-xs-12"><small>Web Design by Trang Pham</small></li>
+             
+        </ul>  
+    </div><!--end copyright-->   
+</body></html>

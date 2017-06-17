@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seattle Central Times</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/weather-icons.min.css" type="text/css" />
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+    <!--Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css" type="text/css" />
+    <style>
+        @font-face {
+        font-family: 'fonts/Avenir LT Std';
+        src: url('fonts/AvenirLTStd-Black.eot');
+        src: url('fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+            url('fonts/AvenirLTStd-Black.woff') format('woff'),
+            url('fonts/AvenirLTStd-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seattle Central Times</h1>
+        <small>Friday, June 16th, 2017</small>
+        <small><img src="images/partlycloudy.gif" alt="weather">51 F</small>
+    </header>
+    <nav class="container-fluid">
+        <a id="mobile-nav" href="">
+            MENU
+        </a>    
+        <ul id="menu-dropdown" class="row">
+            <li class="active col-lg-1 col-sm-2 col-xs-12">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="col-lg-1 col-sm-2 col-xs-12" >
+                <a href="campus.html">Campus</a>
+            </li>
+            <li class="col-lg-1 col-sm-2 col-xs-12">
+                <a href="community.html">Community</a>
+            </li>
+            <li class="col-lg-1 col-sm-2 col-xs-12">
+                <a href="opinion.html">Opinion</a>
+            </li>
+            <li class="col-lg-1 col-lg-offset-7 col-sm-4 col-xs-12">
+                <a href="login.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="contents" class="row">
+        <div class="row col-sm-10 col-sm-offset-1 col-xs-12">    
+            <div id="article-1" class="col-lg-8 col-sm-6 col-xs-12" >
+                <h2></h2>
+                <small class="category"></small>
+                <article class="view"></article>
+            </div>
+            <div id="article-2" class="col-lg-4 col-sm-6 col-xs-12">
+                <h3></h3>
+                <small class="category"></small>
+                <article class="more"></article>
+            </div>
+        </div>
+        <div class="row col-sm-10 col-sm-offset-1 col-xs-12">    
+            <div id="article-3" class="col-lg-4 col-sm-6 col-xs-12" >
+                <h3></h3>
+                <small class="category"></small>
+                <article class="more"></article>
+            </div>
+            <div id="article-4" class="col-lg-4 col-sm-6 col-xs-12">
+                <h3></h3>
+                <small class="category"></small>
+                <article class="more"></article>
+            </div>
+            <div id="article-5" class="col-lg-4 col-sm-6 col-xs-12">
+                <h3></h3>
+                <small class="category"></small>
+                <article class="more"></article>
+            </div>
+        </div>
+        
+    </div>
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //when Mobile Menu bar clicked
+            $('#mobile-nav').click(function(e) {
+                event.preventDefault();
+                //images change
+                $(this).toggleClass("minus");
+                //menu dropped down
+                $("#menu-dropdown").toggleClass('open');
+            });
+        });
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        var js_page = 'home_page';
+    </script>
+    <script type="text/javascript" src="js/build/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seattle Central Times</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+    <!--Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css" type="text/css" />
+    <style>
+        @font-face {
+        font-family: 'fonts/Avenir LT Std';
+        src: url('fonts/AvenirLTStd-Black.eot');
+        src: url('fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+            url('fonts/AvenirLTStd-Black.woff') format('woff'),
+            url('fonts/AvenirLTStd-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seattle Central Times</h1>
+        <small>Monday, May 15th 2016</small>
+         <small><img src="images/partlycloudy.gif" alt="weather">51 F</small>
+    </header>
+    <nav class="container-fluid">
+        <a id="mobile-nav" href="">
+            MENU
+        </a>    
+        <ul id="menu-dropdown" class="row">
+            <li class="active col-lg-1 col-sm-2 col-xs-12">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="col-lg-1 col-sm-2 col-xs-12" >
+                <a href="campus.html">Campus</a>
+            </li>
+            <li class="col-lg-1 col-sm-2 col-xs-12">
+                <a href="community.html">Community</a>
+            </li>
+            <li class="col-lg-1 col-sm-2 col-xs-12">
+                <a href="opinion.html">Opinion</a>
+            </li>
+            <li class="col-lg-1 col-lg-offset-7 col-sm-4 col-xs-12">
+                <a href="login.html">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="create" class="col-sm-6 col-sm-offset-3">
+        <section class="row">
+            <form action="#" method="post" class="col-md-12">
+                <div class="form-group">
+                    <h4>Article Form</h4>
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="School year is coming to an End!">
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select class="form-control" id="category" name="category" >
+                        <option value="Campus">Campus</option>
+                        <option value="Community">Community</option>
+                        <option value="Opinion">Opinion</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" class="form-control"></textarea>
+                </div>
+               
+                <button id="create-button" type="submit" class="btn btn-default" onclick="alert('Article is saved!')">Save</button>
+            </form>
+        </section>
+    </div>
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //when Mobile Menu bar clicked
+            $('#mobile-nav').click(function(e) {
+                event.preventDefault();
+                //images change
+                $(this).toggleClass("minus");
+                //menu dropped down
+                $("#menu-dropdown").toggleClass('open');
+            });
+        });
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        var js_page = 'create_page';
+    </script>
+    <script type="text/javascript" src="js/build/app.js"></script>
+</body>
+</html>
